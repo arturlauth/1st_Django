@@ -18,3 +18,17 @@
 
 	heroku domains:add <seu_dominio.com.br>
 	heroku config:set ALLOWED_HOSTS='<seu_dominio.com.br>, <seu_outro_dominio.com.br>
+
+-- Comando de Coleta de Arquivos Estáticos
+
+	python manage.py collectstatic # mng collectstatic
+
+	Configurações no no settings.py:
+
+	# Configuração de ambiente de desenvolvimento
+
+	STATIC_URL = '/static/'
+	STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+	MEDIA_URL = '/media/'
+	MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
