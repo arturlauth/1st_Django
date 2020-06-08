@@ -2,7 +2,6 @@
     "_meta": {
         "hash": {
             "sha256": "e8062cbc2e79d929812a08f0e91b12408165bf748cdf4a62e44804f5f6030d9e"
-        },
         "pipfile-spec": 6,
         "requires": {
             "python_version": "3.8"
