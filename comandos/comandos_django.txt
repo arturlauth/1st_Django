@@ -10,3 +10,11 @@
 		
 		https://docs.djangoproject.com/en/3.0/ref/settings/#secret-key
 		https://docs.djangoproject.com/en/3.0/topics/signing/
+
+-- Domínio e ALLOWED_HOSTS
+
+	quando for comprar:
+	https://www.python.pro.br/modulos/django/topicos/dominio-e-allowed-hosts
+
+	heroku domains:add <seu_dominio.com.br>
+	heroku config:set ALLOWED_HOSTS='<seu_dominio.com.br>, <seu_outro_dominio.com.br>
