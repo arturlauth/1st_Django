@@ -1,0 +1,12 @@
+--geração de chave:
+	>>> from django.core.management.utils import get_random_secret_key
+	>>> get_random_secret_key()
+
+	setando no HEROKU:
+		
+		heroku config:set SECRET_KEY=<sua_chave_secreta>
+
+	#documentação
+		
+		https://docs.djangoproject.com/en/3.0/ref/settings/#secret-key
+		https://docs.djangoproject.com/en/3.0/topics/signing/
