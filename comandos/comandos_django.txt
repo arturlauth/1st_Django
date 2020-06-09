@@ -32,3 +32,14 @@
 
 	MEDIA_URL = '/media/'
 	MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
+
+-- Criação e Configuração do S3
+
+	Link para acessar o S3:
+	https://console.aws.amazon.com/s3/home
+
+	Link para acessar os usuários (IAM):
+	https://console.aws.amazon.com/iam/home?#/users/cursopython
+
+	Link para o gerador de políticas da Amazon:
+	https://awspolicygen.s3.amazonaws.com/policygen.html
