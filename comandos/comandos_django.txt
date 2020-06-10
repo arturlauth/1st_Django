@@ -43,3 +43,11 @@
 
 	Link para o gerador de políticas da Amazon:
 	https://awspolicygen.s3.amazonaws.com/policygen.html
+
+--Comando Makemigrations e Alias mng
+
+	Comandos utilizados:
+
+	mng makemigrations
+	mng showmigrations
+	mng makemigrations <app>
