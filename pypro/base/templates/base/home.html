@@ -32,34 +32,30 @@
   </div>
 </nav>
 
-    <div class="container-fluid">
+    <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 
 			<div class="jumbotron">
 				<h2>
-					Hello, world!
+					Curso de Python
 				</h2>
 				<p>
-					This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
-				</p>
-				<p>
-					<a class="btn btn-primary btn-large" href="#">Learn more</a>
+					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
+                    <a href="https://wiki.python.org/moin/PythonBooks" target="_blank"> Python Books</a>
 				</p>
 			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="card">
 						<h5 class="card-header">
-							Card title
+							Mais detalhes sobre o instrutor
 						</h5>
 						<div class="card-body">
 							<p class="card-text">
-								Card content
+								<img src="{% static 'img/unnamed.png' %}" alt="foto luciano" class="img-thumbnail float-left mr-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</p>
-						</div>
-						<div class="card-footer">
-							Card footer
 						</div>
 					</div>
 				</div>
@@ -68,6 +64,29 @@
 	</div>
 </div>
 
+<footer class="main-footer mt-5 pt-4 text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Entre em Contato</h3>
+                <address>
+                    999-2183
+                    <br/>
+                    <a href="mailto:email@email.com.br" class="text-light">email@email.com.br</a>
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="rights pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {% now 'Y' %} Python Pro. Todos direitos reservados.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
   </body>
 </html>
