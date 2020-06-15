@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,58 +10,89 @@
 
     <meta name="description" content="Página do curso Python Pro">
     <meta name="author" content="Artur Lauth">
-    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}"/>
     <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
     <script src="{% static 'js/jquery.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/scripts.js' %}"></script>
 
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
 
-    </ul>
-  </div>
+        </ul>
+    </div>
 </nav>
 
-    <div class="container">
-	<div class="row">
-		<div class="col-md-12">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
 
-			<div class="jumbotron">
-				<h2>
-					Curso de Python
-				</h2>
-				<p>
-					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum.
-                    <a href="https://wiki.python.org/moin/PythonBooks" target="_blank"> Python Books</a>
-				</p>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="card">
-						<h5 class="card-header">
-							Mais detalhes sobre o instrutor
-						</h5>
-						<div class="card-body">
-							<p class="card-text">
-								<img src="{% static 'img/unnamed.png' %}" alt="foto luciano" class="img-thumbnail float-left mr-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="jumbotron">
+                <h2>
+                    Curso de Python
+                </h2>
+                <h4 class="mt-4">Subscribe</h4>
+
+                <form action="https://gmail.us10.list-manage.com/subscribe/post?u=25b9b44c9e53c0cdc5982ce74&amp;id=272033cb71"
+                      method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-row align-items-center"
+                      target="_blank" novalidate>
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label class="sr-only" for="mce-EMAIL">Email</label>
+                            <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="exemplo@email.com">
+                        </div>
+                        <div class="col-auto">
+                            <label class="sr-only" for="mce-FNAME">Nome</label>
+                            <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME" placeholder="Seu Nome">
+                        </div>
+
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                                                      name="b_25b9b44c9e53c0cdc5982ce74_272033cb71"
+                                                                                                      tabindex="-1"
+                                                                                                      value=""></div>
+
+                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                                      id="mc-embedded-subscribe" class="btn btn-primary"></div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <h5 class="card-header">
+                            Mais detalhes sobre o instrutor
+                        </h5>
+                        <div class="card-body">
+                            <p class="card-text">
+                                <img src="{% static 'img/unnamed.png' %}" alt="foto luciano"
+                                     class="img-thumbnail float-left mr-4">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. <a
+                                    href="https://wiki.python.org/moin/PythonBooks" target="_blank"> Python Books</a>
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                                id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer class="main-footer mt-5 pt-4 text-light">
@@ -88,5 +119,5 @@
     </div>
 </footer>
 
-  </body>
+</body>
 </html>
